@@ -46,7 +46,7 @@ align-items: center;
 
 
  #banner article{
-    margin: 10px 0;
+    margin: 30px 0;
     display: flex;
     max-width: 900px;
     text-align: center;
@@ -86,19 +86,61 @@ font-size: calc(0.8rem + 0.5vw);
 
 
 
-
-
+.container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
 .card{
-    
 display: flex;
 flex-direction: column;
-
+color: black;
 align-items: center;
-background-color:#1d3d87;
+background-color:whitesmoke;
+margin: 0 auto;
+height: 400px;
 padding: 20px;
-
-
+}
+.card img{
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+.card h2{
+    margin: 0;
+}
+.card p{
+    margin: 15px 0;
+    padding: 0 20px;
+    text-align: center;
 }
 
 
 
+
+
+button{
+    display: block;
+    padding: 10px 20px;
+    background-color: #1d3d87;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+margin-top: auto;
+}
+
+@media (max-width: 978px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .card{
+        height: auto;
+    }
+    .card img{
+        max-width:300px;
+    }
+}
