@@ -1,29 +1,48 @@
 # Mangata and Gallo Jewelry Website
 
-This project was created as part of a Coursera course to demonstrate proficiency in **HTML** and **CSS**. The website represents a fictional jewelry brand, **Mangata and Gallo**, showcasing key web development concepts such as layout design, responsive elements, and semantic HTML.
+This project was created as part of a Coursera course to demonstrate proficiency in **HTML** and **CSS**. The website represents a fictional jewelry brand, **Mangata and Gallo**, and is designed to be fully responsive for both desktop and mobile devices.
 
 ---
 
 ## Features
 
 ### 🌟 Key Highlights:
-1. **Header and Navigation**:
-   - A logo and navigation bar with links to key sections: Home, About, Shop, and Contact.
+1. **Responsive Design**:
+   - The layout adapts seamlessly to both desktop and mobile screens, ensuring a great user experience across all devices.
+   - Implemented using **media queries** and flexible layouts with **CSS Flexbox** and **Grid**.
 
-2. **Hero Banner**:
-   - A welcoming message for visitors with an elegant introduction to the brand.
+2. **Header and Navigation**:
+   - Includes a logo and navigation links to key sections: Home, About, Shop, and Contact.
 
-3. **Product Highlights**:
-   - **Best Seller**: Features the "Pearl Moon" necklace, complete with an image and description.
+3. **Hero Banner**:
+   - A visually striking introduction to the brand with a welcoming message.
+
+4. **Product Highlights**:
+   - **Best Seller**: Features the "Pearl Moon" necklace with an image and description.
    - **Promotions**: Displays a special offer of 25% off for first-time subscribers.
-   - **Operating Hours**: Clearly lists business hours for customer convenience.
+   - **Operating Hours**: Clearly lists business hours.
 
-4. **Footer**:
-   - Repeats the logo and includes copyright information.
+5. **Footer**:
+   - Includes the brand logo and copyright information.
 
 ---
 
-## Technologies Used
+## Responsive Design
 
-- **HTML5**: For structuring the content.
-- **CSS3**: For styling and layout.
+The website is designed to look great on:
+- **Desktop**: Wide layouts with enough spacing and balanced content distribution.
+- **Mobile**: Compact and stacked sections for easy navigation and readability.
+
+### Example Media Query:
+```css
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
