@@ -33,16 +33,5 @@ The website is designed to look great on:
 - **Desktop**: Wide layouts with enough spacing and balanced content distribution.
 - **Mobile**: Compact and stacked sections for easy navigation and readability.
 
-### Example Media Query:
-```css
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .card {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
+
